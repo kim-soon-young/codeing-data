@@ -1,0 +1,92 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+}
+.inner {
+  width: 1300px;
+  margin: 20px auto;
+}
+/* 공통 요소 */
+.clearfix:after {
+  content: "";
+  position: relative;
+  clear: both;
+}
+.gnb {
+  display: block;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: bisque;
+}
+.depth1 {
+  display: flex;
+}
+.depth1 > li {
+  width: calc(100% / 6);
+}
+.mainmenu {
+  display: block;
+  line-height: 90px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+
+  transition: background 0.3s;
+}
+.mainmenu:hover {
+  color: blue;
+}
+.depth2 {
+  position: relative;
+  display: block;
+}
+
+.depth2 > li {
+  position: relative;
+  display: block;
+}
+
+.depth2 > li > a {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+
+  transition: background 0.3s;
+}
+
+.depth2 > li > a:hover {
+  background: blue;
+}
+
+/* 포커스 유지 체크 */
+/* .depth1 > li:hover > .mainmenu {
+  background: blue;
+} */

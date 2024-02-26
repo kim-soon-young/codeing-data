@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+  </head>
+  <style>
+    .menu a {
+      cursor: pointer;
+    }
+    .menu .hide {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div>
+      <ul>
+        <li class="menu">
+          <a href="">상위메뉴</a>
+          <ul class="hide">
+            <li>하위메뉴1</li>
+            <li>하위메뉴2</li>
+            <li>하위메뉴3</li>
+            <li>하위메뉴4</li>
+            <li>하위메뉴5</li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="">상위메뉴</a>
+          <ul class="hide">
+            <li>하위메뉴1</li>
+            <li>하위메뉴2</li>
+            <li>하위메뉴3</li>
+            <li>하위메뉴4</li>
+            <li>하위메뉴5</li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="">상위메뉴</a>
+          <ul class="hide">
+            <li>하위메뉴1</li>
+            <li>하위메뉴2</li>
+            <li>하위메뉴3</li>
+            <li>하위메뉴4</li>
+            <li>하위메뉴5</li>
+          </ul>
+        </li>
+        <li class="menu">
+          <a href="">상위메뉴</a>
+          <ul class="hide">
+            <li>하위메뉴1</li>
+            <li>하위메뉴2</li>
+            <li>하위메뉴3</li>
+            <li>하위메뉴4</li>
+            <li>하위메뉴5</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".menu > a")
+          .click(function () {
+            // 클릭한 <a> 태그의 다음에 위치한 <ul> 태그를 선택하여 변수 submenu에 할당합니다.
+            let submenu = $(this).next("ul");
+            // 만약 submenu가 현재 화면에 보이는 상태라면(즉, .is(":visible")가 참이라면), 다음 코드 블록이 실행됩니다.
+            if (submenu.is(":visible")) {
+              submenu.slideUp();
+            } else {
+              submenu.slideDown();
+            }
+          })
+          .mouseover(function () {
+            $(this).next("ul").slideDown();
+          })
+          .mouseleave(function () {
+            $(this).next("ul").slideUp();
+          });
+      });
+    </script>
+  </body>
+</html>

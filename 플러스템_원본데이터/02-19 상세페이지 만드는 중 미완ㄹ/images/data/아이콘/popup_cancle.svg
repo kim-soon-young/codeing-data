@@ -1,0 +1,12 @@
+<svg id="popup_cancle" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#7e7e7e}
+        </style>
+    </defs>
+    <g id="그룹_298" data-name="그룹 298" transform="rotate(45 4.655 19.285)">
+        <path id="사각형_1486" data-name="사각형 1486" class="cls-1" transform="rotate(90 5.16 12.719)" d="M0 0h2.763v17.879H0z"/>
+        <path id="사각형_1487" data-name="사각형 1487" class="cls-1" transform="rotate(180 5.16 8.94)" d="M0 0h2.763v17.879H0z"/>
+    </g>
+    <path id="사각형_1488" data-name="사각형 1488" style="fill:none" d="M0 0h30v30H0z"/>
+</svg>
