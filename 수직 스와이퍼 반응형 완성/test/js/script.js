@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   // AOS적용
   AOS.init();
   // 비지니스 swiper
-  const sWBusiness = new Swiper(".swBusiness", {
+  const sWBusiness = new Swiper(".swReason", {
     direction: "vertical",
     pagination: {
       el: ".swiper-pagination",
