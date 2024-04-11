@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 id="title">DereamCoding Youtube</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new TypeIt('#title')
+            .pause(100)
+            .delete(7, {delay : 1000})
+            .go();
+        });
+    </script>
+</body>
+</html>
